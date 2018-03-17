@@ -1,2 +1,2 @@
 # firebolt-racing-website
-Website for Firebolt Racing
+Firebolt Racing Website
