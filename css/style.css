@@ -76,6 +76,9 @@
 .firebolt-image{
 }
 
+
+
+
 .dealing{
    background-color: rgb(0, 0, 0);
    height: 30%;
@@ -120,6 +123,7 @@
    background-image: url("../images/F1-1.jpg");
    min-height: 400px;
 }
+
 .caption {
    position: absolute;
    left: 0;
@@ -136,6 +140,72 @@
    letter-spacing: 10px;
 }
 
+
+/*sponsors*/
+.sponsors{
+   height: 140%;
+   float: center;
+   padding: 1% 0;
+   padding-bottom: 3%;
+   text-align: center;
+   background: linear-gradient(#000000,#232526,#000000);
+}
+
+
+.sponsor_image{
+   float: left;
+   width: 180px;
+  margin :4% 5%;
+  border-style: groove;
+  border-color: black;
+  background: white;
+}
+
+div.sponsor_image img {
+  width: 100%;
+    height: auto;
+}
+
+.heading_sponsor{
+  margin-top: 8%;
+  margin-bottom:  2%; 
+  color: white;
+  font-size: 200%;
+}
+
+
+/*Contact us*/
+.contact_us_headings{
+  background-color:transparent;
+  
+  color: #f7f7f7;
+}
+
+.contact_us_links{
+  padding: 3%;
+  font-size:25px;
+  color: #f7f7f7;
+}
+
+.caption2 {
+   position: absolute;
+   left: 0;
+   top: 15%;
+   width: 100%;
+   text-align: center;
+   color: #000;
+}
+.caption2 span.contact_us_headings {
+   background-color: #111;
+   color: #fff;
+   padding: 18px;
+   font-size: 25px;
+   letter-spacing: 10px;
+}
+
+
+
+/*navigation bar*/
 /* Add a black background color to the top navigation */
 .topnav {
    background-image: url("../images/F1-2.jpg");
@@ -210,3 +280,4 @@
 .sticky + .heading {
   padding-top: 102px;
 }
+
