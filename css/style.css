@@ -13,7 +13,7 @@
    box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
    background-size: cover;
    font-family: nfs;
-   font-size: 400%;
+   font-size: 4.5vw;
    color: white;
    display: block;
    text-align: center;
@@ -59,13 +59,13 @@
 
 .border1{
    font-family: Raleway;
-   font-size: 300%;
+   font-size: 4vw;
    color: white;
 }
 
 #border{
    font-family: Raleway;
-   font-size: 300%;
+   font-size: 4vw;
    color: white;
 }
 
@@ -76,13 +76,11 @@
 .firebolt-image{
 }
 
-
-
-
 .dealing{
-   background-color: rgb(0, 0, 0);
-   height: 30%;
+   background-color: rgb(1, 1, 1);
+   height: 19vw;
    float: center;
+   font-size: 1.7vw;
    padding: 1% 0;
    padding-bottom: 3%;
    text-align: center;
@@ -91,8 +89,7 @@
 #design-hours{
    color: white;
    font-family: 'Oswald', sans-serif;
-   font-size: 300%;
-   width: 10%;
+   width: 13%;
    float: left;
    padding-left: 25%;
    padding-right: 10%;
@@ -103,8 +100,7 @@
 #manufacturing-hours{
    color: white;
    font-family: 'Oswald', sans-serif;
-   font-size: 300%;
-   width: 20%;
+   width: 13%;
    padding-left: 10%;
    float: left;
    text-align: center;
@@ -113,15 +109,19 @@
 
 .background-images-1 {
    background-image: url("../images/F1-2.jpg");
-   min-height: 100%;
+   min-height: 46vw;
 }
 .background-images-2 {
    background-image: url("../images/F1-4.jpg");
-   min-height: 100%;
+   min-height: 60vw;
 }
 .background-images-3 {
+   background-image: url("../images/F1-3.jpg"); 
+   min-height: 60vw;
+}
+.background-images-4 {
    background-image: url("../images/F1-1.jpg");
-   min-height: 400px;
+   min-height: 100vw;
 }
 
 .caption {
@@ -143,9 +143,9 @@
 
 /*sponsors*/
 .sponsors{
-   height: 140%;
+   height: 64vw;
    float: center;
-   padding: 1% 0;
+   padding: 0 0;
    padding-bottom: 3%;
    text-align: center;
    background: linear-gradient(#000000,#232526,#000000);
@@ -154,8 +154,8 @@
 
 .sponsor_image{
    float: left;
-   width: 180px;
-  margin :4% 5%;
+   width: 14.3vw;
+  margin : 4vw 4.3vw;
   border-style: groove;
   border-color: black;
   background: white;
@@ -166,44 +166,78 @@ div.sponsor_image img {
     height: auto;
 }
 
-.heading_sponsor{
+.heading_sponsor{/*
   margin-top: 8%;
-  margin-bottom:  2%; 
+  margin-bottom:  2%; */
+  padding-top: 5vw;
+  text-align: center;
   color: white;
-  font-size: 200%;
+  font-size: 2.5vw;
 }
 
 
 /*Contact us*/
 .contact_us_headings{
   background-color:transparent;
-  
   color: #f7f7f7;
 }
 
-.contact_us_links{
-  padding: 3%;
-  font-size:25px;
-  color: #f7f7f7;
+
+.caption-div{
+   background-color: rgb(1, 1, 1);
+   height: 49vw;
+   float: center;
+   font-size: 1.7vw;
+   padding: 1% 0;
+   padding-bottom: 3%;
+   text-align: center;
 }
 
 .caption2 {
    position: absolute;
    left: 0;
-   top: 15%;
+   top: 135vw;
    width: 100%;
    text-align: center;
    color: #000;
+   font-family: Raleway;
 }
 .caption2 span.contact_us_headings {
    background-color: #111;
    color: #fff;
-   padding: 18px;
-   font-size: 25px;
+   padding: 1%;
+   font-size: 1.8vw;
+   letter-spacing: 10px;
+}
+.contact_us_links{
+  padding: 2.5vw;
+  font-size: 1.8vw;
+  color: #f7f7f7;
+}
+
+.about {
+   position: absolute;
+   top: 50vw;
+   left: 0;
+   width: 100%;
+   text-align: center;
+   color: #FFF;
+   font-family: Raleway;
+}
+
+.about_headings {
+   background-color: #111;
+   color: #fff;
+   padding: 1vw;
+   font-size: 1.8vw;
    letter-spacing: 10px;
 }
 
-
+.dealing_about_firebolt{
+  padding: 3vw;
+  font-size: 1.8vw;
+  color: #f7f7f7;
+}
 
 /*navigation bar*/
 /* Add a black background color to the top navigation */
