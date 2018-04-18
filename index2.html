@@ -3,93 +3,61 @@
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:300,400" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/animate.css">
+      <style>
+         body, html {
+            height: 100%;
+            margin: 0;
+            font-family: "Lato", sans-serif;
+            color: #777;
+         }
+         h3 {/*
+            letter-spacing: 5px;
+            text-transform: uppercase;*/
+            font: "Lato", sans-serif;
+            color: #000;
+         }
+         /* Turn off parallax scrolling for tablets and phones */
+         @media only screen and (max-device-width: 1024px) {
+            .background-images-1, .background-images-2, .background-images-3 {
+               background-attachment: scroll;
+            }
+         }
+      </style>
    </head>
-
-
    <body>
       <div class="background-images-1">
       <h1 class="firebolt animated fadeIn">Firebolt Racing</h1>
-
       <!--Navigation bar-->
       <div class="topnav" id="myTopnav">
          <a href="#">Home</a>
          <a href="">Results</a>
-         <a href="html/team.html">Team</a>
-         <a href="html/gallery.html">Gallery</a>
+         <a href="" class="active">Team</a>
+         <a href="">More</a>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
-
-
          <div class="caption">
             <p class="border1 animated fadeIn">Time left until the next event : </p>
             <p class="border1 animated fadeIn"></p>
             <p id="border" class="animated fadeIn"></p>
          </div>
-      </div>
-
-
+      </div>   
       <div class="dealing">
-         <div class="about">
-            <span class="about_headings">About Firebolt</span>
-            <p class="dealing_about_firebolt">Firebolt Racing is a team of devoted undergraduate students at Birla Institute of Technology, Mesra, Ranchi who work together to make an All Terrain Vehicle every year. The team's goal is to help members increase their knowledge about design, project management and fabrication while fostering team work and collaborative spirit. Team members go through a complete design cycle, modelling parts on computer, doing analysis and then manufacturing these parts to build a racecar. We are currently the best team in East India and are 11th best team in India. With the effort we are putting in for the next season, we are confident that this is last time we will have a double digit rank. </p>
-          </div>
+         <ul>
+         </ul>
       </div>
       <div class="background-images-2">
-          <h2 class="heading_sponsor" style="font-family: Raleway; letter-spacing: 10px;">OUR SPONSORS</h2>
-        <div class="sponsor_image">
-         <img  src="images/s1.png">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s2.jpg">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s3.jpg">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s5.png">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s4.png">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s6.png">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s9.png">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s8.jpg">
-        </div>
-         <div class="sponsor_image">
-         <img  src="images/s7.jpg">
-        </div>
-      </div> 
-      <div class="caption-div">
-         <div class="caption2">
-          <h2>Contact Us</h2>
-            <h2 class="contact_us_headings">General Inquiry</h2>
-            <p class="contact_us_links">sanket.firebolt@gmail.com</p>
-            <span class="contact_us_headings">Sponsorship Inquiry</span>
-            <p class="contact_us_links">nahush.firebolt@gmail.com</p>
-            <span class="contact_us_headings">Website Feedback</span>
-            <p class="contact_us_links">vivek.firebolt@gmail.com</p>
-            <span class="contact_us_headings">Contact Team</span>
-            <p class="contact_us_links">firebolt@bitmesra.ac.in</p>
+         <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
          </div>
+      </div>   
+      <div class="dealing">
+         <ul>
+            <h1 id="design-hours">400+ Design Hours</h1>
+            <h1 id="manufacturing-hours">600+ Manufacturing Hours</h1>
+         </ul>
       </div>
-
-      <div class="footer">
-        <ul>
-        <li><i class=""></i></li>
-        <li><i class=""></i></li>
-        <li><i class=""></i></li>
-        </ul>
-      </div>
-
-
       <script>
          var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
          var x = setInterval(function() {
@@ -106,32 +74,6 @@
                  document.getElementById("border").innerHTML = "EXPIRED";
              }
          }, 1000);
-
-
-         function myFunction() 
-         {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-          x.className += " responsive";
-          }
-          else {
-          x.className = "topnav";
-          }
-         }
-
-         window.onscroll = function() {myFunction2()};
-         var navbar = document.getElementById("myTopnav");
-         var sticky = navbar.offsetTop;
-
-         function myFunction2()
-         {
-         if (window.pageYOffset >= sticky) {
-         navbar.classList.add("sticky");
-         }
-         else {
-         navbar.classList.remove("sticky");
-         }
-         }
       </script>
    </body>
 </html>
