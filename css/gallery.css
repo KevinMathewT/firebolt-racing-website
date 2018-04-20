@@ -1,7 +1,37 @@
 * {
+    background-image: url('../images/g5.jpg');
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+    background-size: cover;
     box-sizing: border-box;
 }
 
+body, html 
+{
+ height: 100%;
+ margin: 0; 
+ font-family: "Lato", sans-serif; 
+ color: #777;
+}
+
+.firebolt{
+   background-image: url("../images/g5.jpg");
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43, 0.5);
+   background-size: cover;
+   font-family: nfs;
+   font-size: 4.5vw;
+   padding: 0;
+   color: white;
+   display: block;
+   text-align: center;
+}
 
 .header {
     text-align: center;
@@ -117,4 +147,74 @@
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.topnav {
+   z-index: 1;
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   overflow: hidden; 
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43, .7);
+   font-family: Raleway;
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 1.5vw 10.53vw;
+   text-decoration: none;
+   font-size: 1.2vw;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .8);
+    color: white;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: block;
+    text-align: center;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
