@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:300,400" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/animate.css">
+   </head>
+
+
+   <body>
+      <div class="background-images-1">
+      <h1 class="firebolt animated fadeIn">Firebolt Racing</h1>
+
+      <!--Navigation bar-->
+      <div class="topnav" id="myTopnav">
+         <a href="#">Home</a>
+         <a href="">Results</a>
+         <a href="html/team.html">Team</a>
+         <a href="html/gallery.html" style="padding-right: 15vw">Gallery</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+
+         <div class="caption">
+            <p class="border1 animated fadeIn">Time left until the next event : </p>
+            <p class="border1 animated fadeIn"></p>
+            <p id="border" class="animated fadeIn"></p>
+         </div>
+      </div>
+
+
+      <div class="dealing">
+         <div class="about">
+            <span class="about_headings">About Firebolt</span>
+            <p class="dealing_about_firebolt">Firebolt Racing is a team of devoted undergraduate students at Birla Institute of Technology, Mesra, Ranchi who work together to make an All Terrain Vehicle every year. The team's goal is to help members increase their knowledge about design, project management and fabrication while fostering team work and collaborative spirit. Team members go through a complete design cycle, modelling parts on computer, doing analysis and then manufacturing these parts to build a racecar. We are currently the best team in East India and are 11th best team in India. With the effort we are putting in for the next season, we are confident that this is last time we will have a double digit rank. </p>
+          </div>
+      </div>
+      <div class="background-images-2">
+        <h2 class="heading_sponsor" style="font-family: Raleway; letter-spacing: 10px;">OUR SPONSORS</h2>
+        <div class="sponsor_image">
+         <img  src="images/s1.png">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s2.jpg">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s3.jpg">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s5.png">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s4.png">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s6.png">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s9.png">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s8.jpg">
+        </div>
+         <div class="sponsor_image">
+         <img  src="images/s7.jpg">
+        </div>
+      </div> 
+      <div class="caption-div">
+         <div class="caption2">
+          <h2 style="color: white; padding: 4vw;">Contact Us</h2>
+            <span class="contact_us_headings">General Inquiry</span>
+            <p class="contact_us_links">sanket.firebolt@gmail.com</p>
+            <span class="contact_us_headings">Sponsorship Inquiry</span>
+            <p class="contact_us_links">nahush.firebolt@gmail.com</p>
+            <span class="contact_us_headings">Website Feedback</span>
+            <p class="contact_us_links">vivek.firebolt@gmail.com</p>
+            <span class="contact_us_headings">Contact Team</span>
+            <p class="contact_us_links">firebolt@bitmesra.ac.in</p>
+         </div>
+      </div>
+        
+      </div>
+      <div class="footer-bottom">
+          <div class="footer-bottom__inner group">
+              <div class="footer-inline footer-block--third footer-block--left">
+                  <a href="https://www.facebook.com/firebolt" class="footer__social-link">
+                  <i class="zicon-facebook"></i>
+                  </a>
+                  <a href="https://instagram.com/firebolt/" class="footer__social-link">
+                  <i class="zicon-instagram"></i>
+                  </a>
+                  <a href="https://twitter.com/firebolt" class="footer__social-link">
+                  <i class="zicon-twitter"></i>
+                  </a>
+                  <a href="https://plus.google.com/firebolt" class="footer__social-link">
+                  <i class="zicon-google-plus"></i>
+                  </a>
+              </div>
+              <div class="footer-inline footer-block--third footer-block--center">
+                  <p class="footer__copyright">Website by Kevin Mathew and Nikunj Agarwal</p>
+              </div>
+                <div id="footer_firebolt_parent" style="display: inline; ">
+                  <div id="footer_firebolt" class="footer-inline footer-block--third footer-block--right" style="width: 14.5vw; height: 7vw; margin-top: 0px;">
+                      <p class="footer__copyright_firebolt">FIREBOLT</p>
+                      <p class="footer__copyright_racing">RACING</p>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+      <script>
+         var countDownDate = new Date("Sep 5, 2018 0:0:0").getTime();
+         var x = setInterval(function() {
+             var now = new Date().getTime();
+             var distance = countDownDate - now;
+             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+             document.getElementById("border").innerHTML = days + "d " + hours + "h "
+             + minutes + "m " + seconds + "s ";
+             if (distance < 0) {
+                 clearInterval(x);
+                 document.getElementById("border").innerHTML = "EXPIRED";
+             }
+         }, 1000);
+
+
+         function myFunction() 
+         {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+          x.className += " responsive";
+          }
+          else {
+          x.className = "topnav";
+          }
+         }
+
+         window.onscroll = function() {myFunction2()};
+         var navbar = document.getElementById("myTopnav");
+         var sticky = navbar.offsetTop;
+
+         function myFunction2()
+         {
+         if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky");
+         }
+         else {
+         navbar.classList.remove("sticky");
+         }
+         }
+      </script>
+   </body>
+</html>
