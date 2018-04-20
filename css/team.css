@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+.teampic{
+	margin-top: 10%;
+	width : 225px; 
+	height : 225px;
+    border-radius : 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+.container{
+    padding-top: -200%;
+	text-align: center;
+  /*  border-style: solid;
+    border-width: 5px;*/
+	line-height: 8px;
+}
+
+.column {
+    float:left;
+    width:250px;
+    padding: 0px  4%;
+
+  /* -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    problem= overlapping*/
+}
+
+.row1::after, .row2::after, .row3::after {
+ 
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row1, .row2, .row3{
+
+	/*border-style: solid;
+    border-width: 2px;*/
+	padding: 2% 16.5% ;
+  margin:auto;
+
+}
+
+.year{
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  color: white;
+}
+
+.title{
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.name{
+font-family: 'Tinos', serif;
+color: white;
+}
+
+.heading{
+   font-family: 'Playfair Display SC', serif;
+   background-image: url("../images/bit.jpg");
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   font-size: 4.5vw;
+   color: white;
+   display: block;
+   text-align: center;
+}
+
+
+
+/*.parallax {
+ 
+    height: 100%; 
+
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}*/
+
+.firebolt{
+background-image: url("../images/bit.jpg");
+font-family: nfs;
+margin-left: -10px;
+margin-right: -10px;
+text-align: center;
+font-size: 50px;
+}
+
+@font-face{
+  font-family: nfs;
+  src: url("../fonts/nfs.ttf");
+}
+
+.back{
+  background-image: url("../images/bit.jpg");
+     position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+}

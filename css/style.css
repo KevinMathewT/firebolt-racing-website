@@ -1,8 +1,22 @@
 *{
     padding: 0;
     margin: 0;
-}
+} 
 
+ body, html 
+ {
+  height: 100%;
+  margin: 0; 
+  font-family: "Lato", sans-serif; 
+  color: #777;
+ }
+         
+/* Turn off parallax scrolling for tablets and phones */
+ @media only screen and (max-device-width: 1024px) {
+.background-images-1, .background-images-2, .background-images-3 {
+ background-attachment: scroll;
+      }
+  }
 
 .firebolt{
    background-image: url("../images/F1-2.jpg");
@@ -24,6 +38,13 @@
   src: url("../fonts/NFS_by_JLTV.ttf");
 }
 
+@font-face{
+    font-family:'marshall';
+    src:url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/css/font/marshall/marshall.eot?vpbzp");
+    src:url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/css/font/marshall/marshall.eot?vpbzp#iefix") format("embedded-opentype"),url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/css/font/marshall/marshall.woff?vpbzp") format("woff"),url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/css/font/marshall/marshall.ttf?vpbzp") format("truetype"),url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/css/font/marshall/marshall.svg?vpbzp#marshall") format("svg");
+    font-weight:normal;
+    font-style:normal
+}
 .background-images-1, .background-images-2, .background-images-3 {
    position: relative;
    background-attachment: fixed;
@@ -33,29 +54,7 @@
    background-size: cover;
 }
 
-#nav-1{
-   padding-bottom: 25px;
-}
 
-#navigation-bar{
-   z-index: 100;
-   text-decoration: none;
-   height: 14%;
-   width: 112.5%;
-   padding: 0 0;
-   position: fixed;
-   display: inline;
-}
-
-#navigation-bar a {
-   font-size: 150%;
-   font-family: Raleway;
-   float: left;
-   display: block;
-   color: #f2f2f2;
-   text-align: center;
-   text-decoration: none;
-}
 
 .border1{
    font-family: Raleway;
@@ -78,7 +77,7 @@
 
 .dealing{
    background-color: rgb(1, 1, 1);
-   height: 19vw;
+   height: 25vw;
    float: center;
    font-size: 1.7vw;
    padding: 1% 0;
@@ -109,7 +108,7 @@
 
 .background-images-1 {
    background-image: url("../images/F1-2.jpg");
-   min-height: 46vw;
+   min-height: 46.6vw;
 }
 .background-images-2 {
    background-image: url("../images/F1-4.jpg");
@@ -153,8 +152,8 @@
 
 
 .sponsor_image{
-   float: left;
-   width: 14.3vw;
+  float: left;
+  width: 14.3vw;
   margin : 4vw 4.3vw;
   border-style: groove;
   border-color: black;
@@ -162,8 +161,8 @@
 }
 
 div.sponsor_image img {
-  width: 100%;
-    height: auto;
+  width: 14.3vw;
+  height: auto;
 }
 
 .heading_sponsor{/*
@@ -185,7 +184,7 @@ div.sponsor_image img {
 
 .caption-div{
    background-color: rgb(1, 1, 1);
-   height: 49vw;
+   height: 53vw;
    float: center;
    font-size: 1.7vw;
    padding: 1% 0;
@@ -196,7 +195,7 @@ div.sponsor_image img {
 .caption2 {
    position: absolute;
    left: 0;
-   top: 135vw;
+   top: 136vw;
    width: 100%;
    text-align: center;
    color: #000;
@@ -211,13 +210,14 @@ div.sponsor_image img {
 }
 .contact_us_links{
   padding: 2.5vw;
+  padding-bottom: 5vw;
   font-size: 1.8vw;
   color: #f7f7f7;
 }
 
 .about {
    position: absolute;
-   top: 50vw;
+   top: 52vw;
    left: 0;
    width: 100%;
    text-align: center;
@@ -241,16 +241,16 @@ div.sponsor_image img {
 
 /*navigation bar*/
 /* Add a black background color to the top navigation */
-.topnav {
-   background-image: url("../images/F1-2.jpg");
-   position: relative;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
-   background-size: cover;
-   overflow: hidden; 
-   margin:0px -7.5% 0px 0px;
+.topnav{
+  z-index: 10000;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -260,9 +260,9 @@ div.sponsor_image img {
    display: block;
    color: #f2f2f2;
    text-align: center;
-   padding: 20px 10%;
+   padding: 1.5vw 9.8977vw;
    text-decoration: none;
-   font-size: 17px;
+   font-size: 1.2vw;
 }
 
 /* Change the color of links on hover */
@@ -297,21 +297,147 @@ div.sponsor_image img {
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
+    float: left;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .heading {
-  padding-top: 102px;
+.footer{
+  background-color: rgba(9, 22, 43, 1);
+  height: 22vw;
 }
 
+.firebolt2{
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   font-family: nfs;
+   font-size: 3vw;
+   color: white;
+   display: block;
+   text-align: left;
+   padding-top: 7.5vw;
+   padding-left: 3vw;
+}
+
+.firebolt3{
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   font-family: nfs;
+   font-size: 3vw;
+   color: white;
+   display: block;
+   text-align: left;
+   padding-top: 0;
+   padding-left: 4vw;
+}
+
+.footer-bottom{/*
+  border: 1px black solid;*/
+  background-image:url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/images/backgrounds/footer-background-mobile2x.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+  padding:0 0;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.footer-bottom__inner{/*
+  border: 1px black solid;*/
+  font-size:0;
+  margin:0 auto;
+  max-width:110vw;
+  width:80vw;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.group:before,.product-options:before,.opc:before,.group:after,.product-options:after,.opc:after,.row:before,.container:before,.buttons-set:before,.form:before,form:before,.form-list:before,.options-list:before,.list:before,.list-totals__item:before,.list--key-value .list__item:before,.nav-bar>li>.dropdown-wrapper ul:before,.subnavigation__list:before,.catalog-layer:before,.rating_container:before,.category:before,.category__header:before,.toolbar:before,.product__header:before,.product .price-ratings-box:before,.puff.header .price-ratings-box:before,.product .product-additional:before,.puff.header .product-additional:before,.mixed-content:before,.mixed-content-phone:before,.rating:before,#checkout-review-table-wrapper:before,.blog-wrapper__inner:before,.countryselect-start .countryselect__list:before,.countryselect-morecountries .countryselect__list:before,.countryselect__regions .countryselect__region-countries>ul:before,.products__list:before,.list-grid:before,.product-box__content:before,#countdown-section .countdown-grid:before,.state-container__header:before,.row:after,.container:after,.buttons-set:after,.form:after,form:after,.form-list:after,.options-list:after,.list:after,.list-totals__item:after,.list--key-value .list__item:after,.nav-bar>li>.dropdown-wrapper ul:after,.subnavigation__list:after,.catalog-layer:after,.rating_container:after,.category:after,.category__header:after,.toolbar:after,.product__header:after,.product .price-ratings-box:after,.puff.header .price-ratings-box:after,.product .product-additional:after,.puff.header .product-additional:after,.mixed-content:after,.mixed-content-phone:after,.rating:after,#checkout-review-table-wrapper:after,.blog-wrapper__inner:after,.countryselect-start .countryselect__list:after,.countryselect-morecountries .countryselect__list:after,.countryselect__regions .countryselect__region-countries>ul:after,.products__list:after,.list-grid:after,.product-box__content:after,#countdown-section .countdown-grid:after,.state-container__header:after,.clearfix:before,.links:before,.clearfix:after,.links:after{
+  content:" ";
+  display:table
+}
+.group:after,.product-options:after,.opc:after,.row:after,.container:after,.buttons-set:after,.form:after,form:after,.form-list:after,.options-list:after,.list:after,.list-totals__item:after,.list--key-value .list__item:after,.nav-bar>li>.dropdown-wrapper ul:after,.subnavigation__list:after,.catalog-layer:after,.rating_container:after,.category:after,.category__header:after,.toolbar:after,.product__header:after,.product .price-ratings-box:after,.puff.header .price-ratings-box:after,.product .product-additional:after,.puff.header .product-additional:after,.mixed-content:after,.mixed-content-phone:after,.rating:after,#checkout-review-table-wrapper:after,.blog-wrapper__inner:after,.countryselect-start .countryselect__list:after,.countryselect-morecountries .countryselect__list:after,.countryselect__regions .countryselect__region-countries>ul:after,.products__list:after,.list-grid:after,.product-box__content:after,#countdown-section .countdown-grid:after,.state-container__header:after,.clearfix:after,.links:after{
+  clear:both
+}
+.group,.product-options,.opc,.row,.container,.buttons-set,.form,form,.form-list,.options-list,.list,.list-totals__item,.list--key-value .list__item,.nav-bar>li>.dropdown-wrapper ul,.subnavigation__list,.catalog-layer,.rating_container,.category,.category__header,.toolbar,.product__header,.product .price-ratings-box,.puff.header .price-ratings-box,.product .product-additional,.puff.header .product-additional,.mixed-content,.mixed-content-phone,.rating,#checkout-review-table-wrapper,.blog-wrapper__inner,.countryselect-start .countryselect__list,.countryselect-morecountries .countryselect__list,.countryselect__regions .countryselect__region-countries>ul,.products__list,.list-grid,.product-box__content,#countdown-section .countdown-grid,.state-container__header,.clearfix,.links{
+  *zoom:1
+}
+.footer-inline{/*
+  border: 1px black solid;*/
+  display:inline-block;
+  font-size:10px;
+  padding:0;
+  vertical-align:middle
+}
+.footer-block--third{
+  width:26.71vw;
+}
+
+.footer-block--left{
+  margin-left:-10px;
+  text-align:left
+}
+
+.footer-block--center{
+  text-align:center
+}
+
+.footer__copyright{
+  font-family: Raleway;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size: 1.5vw;
+  line-height:1.29;
+}
+.footer__copyright_firebolt{
+  padding-top: 0.5vw;
+  padding-left: 0vw;
+  font-family: nfs;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  line-height:0;
+}
+.footer__copyright_racing{
+  padding-left: 1.5vw;
+  font-family: nfs;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  line-height:0;
+}
+.footer__logo{
+  width: 90px
+}
+#footer_firebolt_parent{/*x
+  padding: 0vw;*/ /*
+  border: 1px black solid;*/
+  /*
+  background-color: black;*/
+}
+#footer_firebolt{
+  margin-left: 8vw;
+  padding-left: 0.5vw;
+  z-index: 1000;
+  width: 0.5vw;/*
+  border: 1px black solid;*//*
+  background-color: black;*/
+}
