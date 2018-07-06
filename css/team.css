@@ -2,7 +2,7 @@
  {
   height: 100%;
   margin: 0; 
-  font-family: "Lato", sans-serif; 
+  font-family: "Raleway", sans-serif; 
   color: #777;
  }
 .teampic{
@@ -217,6 +217,97 @@ font-size: 50px;
   /*
   background-color: black;*/
 }
+<<<<<<< HEAD
+=======
+
+.footer-bottom{/*
+  border: 1px black solid;*/
+  background-image:url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/images/backgrounds/footer-background-mobile2x.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+  padding:0 0;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.footer-bottom__inner{/*
+  border: 1px black solid;*/
+  font-size:0;
+  margin:0 auto;
+  max-width:110vw;
+  width:80vw;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.group:before,.product-options:before,.opc:before,.group:after,.product-options:after,.opc:after,.row:before,.container:before,.buttons-set:before,.form:before,form:before,.form-list:before,.options-list:before,.list:before,.list-totals__item:before,.list--key-value .list__item:before,.nav-bar>li>.dropdown-wrapper ul:before,.subnavigation__list:before,.catalog-layer:before,.rating_container:before,.category:before,.category__header:before,.toolbar:before,.product__header:before,.product .price-ratings-box:before,.puff.header .price-ratings-box:before,.product .product-additional:before,.puff.header .product-additional:before,.mixed-content:before,.mixed-content-phone:before,.rating:before,#checkout-review-table-wrapper:before,.blog-wrapper__inner:before,.countryselect-start .countryselect__list:before,.countryselect-morecountries .countryselect__list:before,.countryselect__regions .countryselect__region-countries>ul:before,.products__list:before,.list-grid:before,.product-box__content:before,#countdown-section .countdown-grid:before,.state-container__header:before,.row:after,.container:after,.buttons-set:after,.form:after,form:after,.form-list:after,.options-list:after,.list:after,.list-totals__item:after,.list--key-value .list__item:after,.nav-bar>li>.dropdown-wrapper ul:after,.subnavigation__list:after,.catalog-layer:after,.rating_container:after,.category:after,.category__header:after,.toolbar:after,.product__header:after,.product .price-ratings-box:after,.puff.header .price-ratings-box:after,.product .product-additional:after,.puff.header .product-additional:after,.mixed-content:after,.mixed-content-phone:after,.rating:after,#checkout-review-table-wrapper:after,.blog-wrapper__inner:after,.countryselect-start .countryselect__list:after,.countryselect-morecountries .countryselect__list:after,.countryselect__regions .countryselect__region-countries>ul:after,.products__list:after,.list-grid:after,.product-box__content:after,#countdown-section .countdown-grid:after,.state-container__header:after,.clearfix:before,.links:before,.clearfix:after,.links:after{
+  content:" ";
+  display:table
+}
+.group:after,.product-options:after,.opc:after,.row:after,.container:after,.buttons-set:after,.form:after,form:after,.form-list:after,.options-list:after,.list:after,.list-totals__item:after,.list--key-value .list__item:after,.nav-bar>li>.dropdown-wrapper ul:after,.subnavigation__list:after,.catalog-layer:after,.rating_container:after,.category:after,.category__header:after,.toolbar:after,.product__header:after,.product .price-ratings-box:after,.puff.header .price-ratings-box:after,.product .product-additional:after,.puff.header .product-additional:after,.mixed-content:after,.mixed-content-phone:after,.rating:after,#checkout-review-table-wrapper:after,.blog-wrapper__inner:after,.countryselect-start .countryselect__list:after,.countryselect-morecountries .countryselect__list:after,.countryselect__regions .countryselect__region-countries>ul:after,.products__list:after,.list-grid:after,.product-box__content:after,#countdown-section .countdown-grid:after,.state-container__header:after,.clearfix:after,.links:after{
+  clear:both
+}
+.group,.product-options,.opc,.row,.container,.buttons-set,.form,form,.form-list,.options-list,.list,.list-totals__item,.list--key-value .list__item,.nav-bar>li>.dropdown-wrapper ul,.subnavigation__list,.catalog-layer,.rating_container,.category,.category__header,.toolbar,.product__header,.product .price-ratings-box,.puff.header .price-ratings-box,.product .product-additional,.puff.header .product-additional,.mixed-content,.mixed-content-phone,.rating,#checkout-review-table-wrapper,.blog-wrapper__inner,.countryselect-start .countryselect__list,.countryselect-morecountries .countryselect__list,.countryselect__regions .countryselect__region-countries>ul,.products__list,.list-grid,.product-box__content,#countdown-section .countdown-grid,.state-container__header,.clearfix,.links{
+  *zoom:1
+}
+.footer-inline{/*
+  border: 1px black solid;*/
+  display:inline-block;
+  font-size:10px;
+  padding:0;
+  vertical-align:middle
+}
+.footer-block--third{
+  width:26.71vw;
+}
+
+.footer-block--left{
+  margin-left:-10px;
+  text-align:left
+}
+
+.footer-block--center{
+  text-align:center
+}
+
+.footer__copyright{
+  font-family: Raleway;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size: 1.5vw;
+  line-height:1.29;
+}
+.footer__copyright_firebolt{
+  padding-top: 0.5vw;
+  padding-left: 0vw;
+  font-family: nfs;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  line-height:0;
+}
+.footer__copyright_racing{
+  padding-left: 1.5vw;
+  font-family: nfs;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  line-height:0;
+}
+.footer__logo{
+  width: 90px
+}
+#footer_firebolt_parent{/*x
+  padding: 0vw;*/ /*
+  border: 1px black solid;*/
+  /*
+  background-color: black;*/
+}
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
 #footer_firebolt{
   margin-left: 8vw;
   padding-left: 0.5vw;

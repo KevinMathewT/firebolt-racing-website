@@ -1,6 +1,16 @@
 * {
+<<<<<<< HEAD
     
 
+=======
+    background-image: url('../images/g5.jpg');
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+    background-size: cover;
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
     box-sizing: border-box;
 }
 
@@ -13,7 +23,11 @@ body, html
 }
 
 .firebolt{
+<<<<<<< HEAD
    background-image: url("../images/g4.jpg");
+=======
+   background-image: url("../images/g5.jpg");
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
    position: relative;
    background-attachment: fixed;
    background-position: center;
@@ -176,7 +190,11 @@ body, html
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
 .topnav {
    z-index: 1;
    position: relative;
@@ -189,31 +207,54 @@ body, html
   
 }
 
+<<<<<<< HEAD
 
 .topnav a {
 
+=======
+/* Style the links inside the navigation bar */
+.topnav a {
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43, .7);
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
    font-family: Raleway;
    float: left;
    display: block;
    color: #f2f2f2;
    text-align: center;
+<<<<<<< HEAD
    padding: 20px 10%;
    text-decoration: none;
    font-size: 17px;
 }
 
 
+=======
+   padding: 1.5vw 10.53vw;
+   text-decoration: none;
+   font-size: 1.2vw;
+}
+
+/* Change the color of links on hover */
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
 .topnav a:hover {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .8);
     color: white;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Add an active class to highlight the current page */
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
 .active {
     color: white;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Hide the link that should open and close the topnav on small screens */
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
 .topnav .icon {
     display: none;
 }
@@ -245,6 +286,7 @@ body, html
   top: 0;
   width: 100%;
 }
+<<<<<<< HEAD
 */
 .footer-bottom{/*
   border: 1px black solid;*/
@@ -335,3 +377,5 @@ body, html
   background-color: black;*/
 }
 
+=======
+>>>>>>> 339c993f5a9244a3d8041601399efc6e8760d206
