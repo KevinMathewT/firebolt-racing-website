@@ -7,6 +7,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/animate.css">
+      <script src="js/wow.min.js"></script>
+       <script>  new WOW().init(); </script>
    </head>
 
 
@@ -17,7 +19,7 @@
       <!--Navigation bar-->
       <div class="topnav" id="myTopnav">
          <a href="#">Home</a>
-         <a href="">Results</a>
+         <a href="html/results.html">Results</a>
          <a href="html/team.html">Team</a>
          <a href="html/gallery.html" style="padding-right: 15vw">Gallery</a>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -25,51 +27,62 @@
 
 
          <div class="caption">
-            <p class="border1 animated fadeIn">Time left until the next event : </p>
-            <p class="border1 animated fadeIn"></p>
-            <p id="border" class="animated fadeIn"></p>
+            <p class="border1 animated slideInUp">Time left until the next event : </p>
+            <p class="border1 animated slideInUp"></p>
+            <p id="border" class="animated slideInUp"></p>
          </div>
       </div>
 
 
       <div class="dealing">
-         <div class="about">
+         <div class="about wow pulse">
             <span class="about_headings">About Firebolt</span>
             <p class="dealing_about_firebolt">Firebolt Racing is a team of devoted undergraduate students at Birla Institute of Technology, Mesra, Ranchi who work together to make an All Terrain Vehicle every year. The team's goal is to help members increase their knowledge about design, project management and fabrication while fostering team work and collaborative spirit. Team members go through a complete design cycle, modelling parts on computer, doing analysis and then manufacturing these parts to build a racecar. We are currently the best team in East India and are 11th best team in India. With the effort we are putting in for the next season, we are confident that this is last time we will have a double digit rank. </p>
           </div>
       </div>
       <div class="background-images-2">
         <h2 class="heading_sponsor" style="font-family: Raleway; letter-spacing: 10px;">OUR SPONSORS</h2>
+        <section class="wow fadeInLeft" data-wow-delay="-1s">
         <div class="sponsor_image">
          <img  src="images/s1.png">
         </div>
          <div class="sponsor_image">
          <img  src="images/s2.jpg">
         </div>
+        </section>
+        <section class="wow fadeInRight" data-wow-delay="-1s">
          <div class="sponsor_image">
          <img  src="images/s3.jpg">
         </div>
          <div class="sponsor_image">
          <img  src="images/s5.png">
         </div>
+      </section>
+      <section class="wow fadeInLeft" data-wow-delay="-0s">
          <div class="sponsor_image">
          <img  src="images/s4.png">
         </div>
          <div class="sponsor_image">
          <img  src="images/s6.png">
         </div>
+        </section>
+        <section class="wow fadeInRight" data-wow-delay="-0s">
          <div class="sponsor_image">
          <img  src="images/s9.png">
         </div>
          <div class="sponsor_image">
          <img  src="images/s8.jpg">
         </div>
+        </section>
+        <section class="wow fadeInUp" data-wow-delay="0.5s">        
          <div class="sponsor_image">
          <img  src="images/s7.jpg">
         </div>
+      </section>
       </div> 
       <div class="caption-div">
          <div class="caption2">
+        <section class="wow fadeInLeft">   
           <h2 style="color: white; padding: 4vw;">Contact Us</h2>
             <span class="contact_us_headings">General Inquiry</span>
             <p class="contact_us_links">sanket.firebolt@gmail.com</p>
@@ -79,6 +92,13 @@
             <p class="contact_us_links">vivek.firebolt@gmail.com</p>
             <span class="contact_us_headings">Contact Team</span>
             <p class="contact_us_links">firebolt@bitmesra.ac.in</p>
+      </section>
+         </div>
+         <div class="caption3">
+        <section class="wow fadeInRight">
+          <h2 class="about_bit_header">About BIT</h2>
+            <p class="about_bit">Birla Institute of Tehnology, Mesra, Ranchi established in 1955 by industrialist B.M. Birla, is one of the premier engineering destinations in India. Sprawling over 750 acres, the lush green campus is second home to more than 10,000 students for over six decades.<br /><br /> BIT, apart from being the first institute in India to establish a department of space engineering and rocketry in association with Indian Space Research Organisation (ISRO) and is also the first institute to provide young entrepreneurs with initial project funding. BIT houses the PARAM 10000 Supercomputer along with a Central Instrumentation Facility.<br /><br />BIT ensures that discipline is properly coupled with more than adequate share of fun and excitement. Student put in their very best to make the institute a great place to live and learn in.</p>
+      </section>
          </div>
       </div>
         
@@ -86,26 +106,31 @@
       <div class="footer-bottom">
           <div class="footer-bottom__inner group">
               <div class="footer-inline footer-block--third footer-block--left">
-                  <a href="https://www.facebook.com/firebolt" class="footer__social-link">
+                <section class="wow fadeInDown">   
+                  <a href="https://www.facebook.com/fireboltracing" class="footer__social-link">
                   <i class="fa fa-facebook" style="color: white; font-size: 3vw; padding-left: 0vw;"></i>
                   </a>
-                  <a href="https://instagram.com/firebolt/" class="footer__social-link">
+                  <a href="https://www.instagram.com/firebolt_racing/" class="footer__social-link">
                   <i class="fa fa-instagram" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
                   </a>
-                  <a href="https://twitter.com/firebolt" class="footer__social-link">
-                  <i class="fa fa-twitter" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
+                  <a href="https://www.youtube.com/channel/UCmB0iMS_4CnwhmPKP6arBKg" class="footer__social-link">
+                  <i class="fa fa-youtube" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
                   </a>
-                  <a href="https://plus.google.com/firebolt" class="footer__social-link">
+                  <a href="https://issuu.com/fireboltracing" class="footer__social-link">
                   <i class="fa fa-google-plus" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
                   </a>
+                </section>
               </div>
               <div class="footer-inline footer-block--third footer-block--center">
+                <section class="wow fadeInDown">   
                   <p style="border-left: 1px white solid; border-right: 1px white solid; padding: 4vw 4vw;" class="footer__copyright">Website by <br> Kevin Mathew &<br> Nikunj Agarwal</p>
               </div>
-                <div id="footer_firebolt_parent" style="display: inline; ">
+                <div id="footer_firebolt_parent" style="display: inline;">
                   <div id="footer_firebolt" class="footer-inline footer-block--third footer-block--right" style="width: 14.5vw; height: 7vw;">
+                <section class="wow fadeInDown">   
                       <p class="footer__copyright_firebolt">FIREBOLT</p>
                       <p class="footer__copyright_racing">RACING</p>
+                </section>
                   </div>
                 </div>
               </div>

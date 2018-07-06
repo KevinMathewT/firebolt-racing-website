@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/results.css" rel="stylesheet" type="text/css">
+    <link href="../css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css">
+      <script src="../js/wow.min.js"></script>
+       <script>  new WOW().init(); </script>
+    <title>Achievements</title>
+</head>
+
+
+<body>
+    <div class="back"> 
+        <h1 class="firebolt animated fadeIn">Firebolt Racing</h1>
+        <!--Navigation bar-->
+        <div class="topnav" id="myTopnav">
+            <a href="../index2.html">Home</a>
+            <a href="#">Results</a>
+            <a href="team.html">Team</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+         </div>
+
+    
+        <h1 class="heading">
+          <section class="animated fadeInUp">Achievements</section>
+        </h1>
+        <div class="result_container">
+          <section class="animated fadeInUp">
+    	     <img class="result_image" src="../images/results.png">
+          </section>
+        </div>
+    </div>
+
+
+          <div class="footer-bottom">
+          <div class="footer-bottom__inner group">
+              <div class="footer-inline footer-block--third footer-block--left">
+                <section class="wow fadeInDown">   
+                  <a href="https://www.facebook.com/fireboltracing" class="footer__social-link">
+                  <i class="fa fa-facebook" style="color: white; font-size: 3vw; padding-left: 0vw;"></i>
+                  </a>
+                  <a href="https://www.instagram.com/firebolt_racing/" class="footer__social-link">
+                  <i class="fa fa-instagram" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCmB0iMS_4CnwhmPKP6arBKg" class="footer__social-link">
+                  <i class="fa fa-youtube" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
+                  </a>
+                  <a href="https://issuu.com/fireboltracing" class="footer__social-link">
+                  <i class="fa fa-google-plus" style="color: white; font-size: 3vw; padding-left: 1.5vw;"></i>
+                  </a>
+                </section>
+              </div>
+              <div class="footer-inline footer-block--third footer-block--center">
+                <section class="wow fadeInDown">   
+                  <p style="border-left: 1px white solid; border-right: 1px white solid; padding: 4vw 4vw;" class="footer__copyright">Website by <br> Kevin Mathew &<br> Nikunj Agarwal</p>
+              </div>
+                <div id="footer_firebolt_parent" style="display: inline;">
+                  <div id="footer_firebolt" class="footer-inline footer-block--third footer-block--right" style="width: 14.5vw; height: 7vw;">
+                <section class="wow fadeInDown">   
+                      <p class="footer__copyright_firebolt">FIREBOLT</p>
+                      <p class="footer__copyright_racing">RACING</p>
+                </section>
+                  </div>
+                </div>
+              </div>
+      </div>
+</body>
+
+      <script>
+         var countDownDate = new Date("Sep 5, 2018 0:0:0").getTime();
+         var x = setInterval(function() {
+             var now = new Date().getTime();
+             var distance = countDownDate - now;
+             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+             document.getElementById("border").innerHTML = days + "d " + hours + "h "
+             + minutes + "m " + seconds + "s ";
+             if (distance < 0) {
+                 clearInterval(x);
+                 document.getElementById("border").innerHTML = "EXPIRED";
+             }
+         }, 1000);
+
+
+         function myFunction() 
+         {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+          x.className += " responsive";
+          }
+          else {
+          x.className = "topnav";
+          }
+         }
+
+         window.onscroll = function() {myFunction2()};
+         var navbar = document.getElementById("myTopnav");
+         var sticky = navbar.offsetTop;
+
+         function myFunction2()
+         {
+         if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky");
+         }
+         else {
+         navbar.classList.remove("sticky");
+         }
+         }
+      </script>

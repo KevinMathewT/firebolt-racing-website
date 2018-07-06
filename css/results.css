@@ -1,0 +1,159 @@
+ body, html 
+ {
+  height: 100%;
+  margin: 0; 
+  font-family: "Lato", sans-serif; 
+  color: #777;
+ }
+
+
+.heading{
+   font-family: 'Raleway', serif;
+   background-image: url("../images/g10.jpg");
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   font-size: 4.5vw;
+   color: white;
+   display: block;
+   text-align: center;
+}
+
+ .firebolt{
+   background-image: url("../images/g10.jpg");
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   font-family: nfs;
+   font-size: 4.5vw;
+   color: white;
+   display: block;
+   text-align: center;
+}
+
+@font-face{
+  font-family: nfs;
+  src: url("../fonts/nfs.ttf");
+}
+
+.back{
+  background-image: url("../images/g10.jpg");
+  position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(9, 22, 43,.5);
+   background-size: cover;
+   margin-bottom: -2vw;
+}
+
+.result_image{
+
+ width:70vw ;
+ height:55vw;
+ border:ridge;
+ border-width:3px;
+ border-color: FireBrick;  
+}
+
+.result_container{
+ padding-bottom: 10vw;
+ padding-left: 13vw;
+ padding-right: 15vw;
+ width:70vw ;
+ height:55vw;
+
+}
+
+.footer-bottom{/*
+  border: 1px black solid;*/
+  background-image:url("https://www.marshallheadphones.com/skin/frontend/vanillagento/marshall/images/backgrounds/footer-background-mobile2x.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+  padding:0 0;
+  padding-top: 1.5vw;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.footer-bottom__inner{/*
+  border: 1px black solid;*/
+  font-size:0;
+  margin:0 auto;
+  max-width:110vw;
+  width:80vw;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.footer-inline{/*
+  border: 1px black solid;*/
+  display:inline-block;
+  font-size:10px;
+  padding:0;
+  vertical-align:middle
+}
+.footer-block--third{
+  width:26.71vw;
+}
+
+.footer-block--left{
+  margin-left:-10px;
+  text-align:left
+}
+
+.footer-block--center{
+  text-align:center
+}
+
+.footer__copyright{
+  font-family: Raleway;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size: 1.5vw;
+  line-height:1.29;
+}
+.footer__copyright_firebolt{
+  padding-top: 0.5vw;
+  padding-left: 0vw;
+  font-family: nfs;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  line-height:0;
+}
+.footer__copyright_racing{
+  padding-left: 1.5vw;
+  font-family: nfs;
+  font-weight:800;
+  margin: 2vw 0;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  line-height:0;
+}
+.footer__logo{
+  width: 90px
+}
+#footer_firebolt_parent{/*x
+  padding: 0vw;*/ /*
+  border: 1px black solid;*/
+  /*
+  background-color: black;*/
+}
+#footer_firebolt{
+  margin-left: 8vw;
+  padding-left: 0.5vw;
+  z-index: 1000;
+  width: 0.5vw;/*
+  border: 1px black solid;*//*
+  background-color: black;*/
+}
